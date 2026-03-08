@@ -13,45 +13,139 @@ Data Science and Engineering Master Program
 
 ---
 
-## Course Overview
+## Why This Course Exists
 
-- **Instructor**: Nikola Balic
-- **Course**: Network Analysis
-- **Program**: Data Science and Engineering Master
-- **Institution**: Faculty of Natural Science, University of Split (PMF-UNIST)
-- **Academic Year**: 2024/2025
+- Many systems are better understood as relationships, not isolated objects.
+- If we only list the objects, we miss the structure.
+- If we study the connections, we can ask better questions.
 
 ---
 
-## What is Network Science?
+## A Foundational Example
 
-Network Science is an interdisciplinary field that studies complex networks such as:
-- Technological networks
-- Information networks
-- Biological networks
-- Social networks
-- Economic networks
+![width:1200px](images/konigsberg_bridges.png)
 
 ---
 
-## Why Networks Matter
+## Why Konigsberg Matters
 
-- Networks are everywhere
-- They help us understand complex systems
-- Allow us to model relationships and interactions
-- Provide tools for prediction and intervention
-- Enable discovery of hidden patterns
+- Euler treated a city-walking puzzle as a problem of connections.
+- The exact map mattered less than which land areas were linked.
+- That shift helped launch graph-based thinking.
+- The big lesson: structure alone can answer important questions.
 
 ---
 
-## Course Structure
+## What Is a Network?
 
-1. Theoretical foundations
-2. Network measures and metrics
-3. Network models
+A network is a set of **nodes** connected by **edges**.
+
+- **Nodes** are entities: people, proteins, airports, web pages.
+- **Edges** are relationships: friendship, regulation, flights, hyperlinks.
+- The same representation works across many domains.
+
+---
+
+## Common Network Types
+
+- **Undirected:** a connection has no direction
+- **Directed:** a connection goes from one node to another
+- **Weighted:** a connection has strength or frequency
+- **Bipartite:** two different node types connect
+
+These types matter because they change the analysis.
+
+---
+
+## Why Network Thinking Matters
+
+Network analysis helps answer questions such as:
+
+- Which nodes are most central or influential?
+- How quickly can information, disease, or failure spread?
+- Does the network break if a key node is removed?
+- Are there communities or hidden subgroups?
+- Is the structure random, clustered, or hub-dominated?
+
+This course is about learning how to answer these questions rigorously.
+
+---
+
+## Example Domains
+
+- **Social networks:** friendship, trust, influence, collaboration
+- **Biological networks:** gene regulation, protein interactions, metabolism
+- **Technological networks:** internet routing, power grids, road systems
+- **Information networks:** web links, citation networks, recommendation systems
+- **Economic networks:** trade, ownership, supply chains, financial contagion
+
+Different domains use different data, but many structural questions are the same.
+
+---
+
+## What Structure Can Reveal
+
+Even a small network can reveal:
+
+- who is well connected,
+- who links otherwise separate groups,
+- which parts are isolated,
+- and where the whole structure looks fragile.
+
+Lecture 02 will formalize the graph concepts behind these observations.
+
+---
+
+## Why Networks Are Different From Tables
+
+- A table describes attributes of items.
+- A network describes relationships between items.
+- Often the relationships are the main source of insight.
+
+Tables tell us what something is.
+Networks help us understand how things interact.
+
+---
+
+## What This Course Builds Toward
+
+The course follows a cumulative path:
+
+1. Graph foundations
+2. Network measures and centrality
+3. Connectivity and vulnerability
 4. Community detection
-5. Network dynamics
-6. Applications
+5. Random, small-world, and scale-free models
+6. Resilience and cascading failures
+7. Dynamics on networks
+8. Applied case studies
+
+Each step adds a new way to study the same topic.
+
+---
+
+## How You Will Work In This Course
+
+- You will not switch topics every week.
+- Each student keeps one topic for the full course.
+- Exercise 02 starts the topic.
+- Later exercises extend the same analysis with new methods.
+
+The course is designed as cumulative work, not isolated weekly tasks.
+
+---
+
+## Software and Tools
+
+We will primarily use:
+
+- **Python** for implementation
+- **NetworkX** for graph construction and analysis
+- **Jupyter notebooks** for iterative exploration
+- **Gephi** or plotting libraries for visualization when useful
+
+The goal is not tool memorization.
+The goal is clear structural reasoning supported by code.
 
 ---
 
@@ -61,26 +155,68 @@ Network Science is an interdisciplinary field that studies complex networks such
 - Project: 40%
 - Final exam: 30%
 
+Assignments build skill.
+The project develops your topic into a full analysis.
+
 ---
 
 ## Resources
 
-- Main textbook: Networks: An Introduction by M.E.J. Newman
-- Additional references:
-  - Network Science by Albert-László Barabási
-  - Social and Economic Networks by Matthew O. Jackson
+- Main textbook: *Networks: An Introduction* by M. E. J. Newman
+- Additional reference: *Network Science* by Albert-Laszlo Barabasi
+- Additional reference: *Social and Economic Networks* by Matthew O. Jackson
+- Practical documentation: NetworkX official documentation
+
+Use the books for concepts and the documentation for implementation.
 
 ---
 
-## Software Tools
+## What You Should Be Able To Do By The End
 
-- **Python** programming language
-- **NetworkX** library
-- **Jupyter** notebooks
-- **Gephi** for visualization
+By the end of the course, you should be able to:
+
+- represent real data as a graph,
+- compute and interpret network metrics,
+- identify important nodes and communities,
+- compare real networks with simple models,
+- analyze resilience and diffusion processes,
+- and communicate findings clearly with code, figures, and interpretation.
 
 ---
 
 ## Next Lecture
 
-Graph Theory Fundamentals: The mathematical foundation of network analysis
+Next: **Graph Theory Fundamentals**
+
+In [`lectures/02/lecture.md`](../02/lecture.md) we move from motivation to structure:
+
+- graph construction,
+- graph types,
+- graph representations,
+- and basic graph properties in NetworkX.
+
+---
+
+## Discussion: Apply The Questions
+
+In discussion, apply the three questions to these examples:
+
+1. A university class
+2. International air travel
+3. Scientific publishing in one field
+
+Ask:
+
+- What are the entities?
+- What are the connections?
+- What might become visible once we focus on structure?
+
+---
+
+## Three Questions To Keep In Mind
+
+When you look at a system, ask:
+
+1. What are the entities?
+2. What are the connections between them?
+3. What becomes visible once I focus on the structure?
